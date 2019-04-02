@@ -23,8 +23,9 @@ function imageUpload(req, res){
     // getting the file name randomized sha1
     var current_date = (new Date()).valueOf().toString();
     var random = Math.random().toString();
-    var fileName = crypto.createHash('sha1').update(current_date + random).digest('hex');
-    console.log(fileName)
+    var fileName = crypto.createHash('sha1').update(file.buffer).digest('hex');
+    console.log(fileName)   
+    //console.log(fileName)
     // saving the file
     fs.writeFile('uploads/'+fileName+'.'+fileExtension,file.buffer, function(err){
         if(err) {
