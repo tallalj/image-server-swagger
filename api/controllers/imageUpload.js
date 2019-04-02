@@ -4,7 +4,7 @@ var util = require('util');
 var fs = require('fs');
 var fileType = require('file-type');
 var crypto = require('crypto');
-var baseUrl = 'http://127.0.0.1:10010/file/';
+var baseUrl = 'http://159.8.160.5:10010/file/';
 
 // exporting the function for swagger
 module.exports = {
