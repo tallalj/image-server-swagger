@@ -4,7 +4,7 @@ var util = require('util');
 var fs = require('fs');
 var fileType = require('file-type');
 var crypto = require('crypto');
-var baseUrl = 'http://159.8.160.5:10010/file/';
+//var baseUrl = 'http://159.8.160.5:10010/file/';
 
 // exporting the function for swagger
 module.exports = {
@@ -35,6 +35,7 @@ function imageUpload(req, res){
     })
     //console.log(file);
     //console.log(fileType(file.buffer))
+    let baseUrl = req.protocol + '://'+req.get('host')+'/file/'
     var url = (baseUrl+fileName+"."+fileExtension)
     res.json({message: 'succesfully generated url', url: url});
 }
