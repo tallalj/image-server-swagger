@@ -4,7 +4,7 @@ This is a image file server written in nodejs using swagger and expressjs.
 
 # Requirements
 - install Nodejs 10.15.3 LTS
-- You can install using nvm: https://github.com/nvm-sh/nvm. Command for installing the latest lts using nvm is: 'nvm install -lts'
+- You can install using [nvm][https://github.com/nvm-sh/nvm]. Command for installing the latest lts using nvm is: 'nvm install -lts'
 - Go to the directory and install  all dependencies using 'npm install'
 - Open port 10010
 
@@ -17,8 +17,8 @@ The server supports running via npm forever module. So you can install forever u
 
 
 # Running as a service
-We will be following this guide for creating a startup service for our server: http://pm2.keymetrics.io/docs/usage/startup/
-- We can run the server as a service using pm2: http://pm2.keymetrics.io/docs/usage/quick-start/
+We will be following [this guide][ http://pm2.keymetrics.io/docs/usage/startup/] for creating a startup service for our server
+- We can run the server as a service using [pm2][http://pm2.keymetrics.io/docs/usage/quick-start/]
 - Install pm2 using 'npm install -g pm2'
 - Go into the directory of image server and perform 'pm2 startup'
 - Copy the console output and execute the command
