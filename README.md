@@ -19,7 +19,7 @@ The server supports running via npm forever module. So you can install forever u
 # Running as a service
 We will be following [this guide](http://pm2.keymetrics.io/docs/usage/startup/) for creating a startup service for our server
 - We can run the server as a service using [pm2](http://pm2.keymetrics.io/docs/usage/quick-start/)
-- Install pm2 using <b>npm install -g pm2</b>
+- Install pm2 using ```npm install -g pm2```
 - Go into the directory of image server and perform 'pm2 startup'
 - Copy the console output and execute the command
 - Run 'pm2 start app.js'
